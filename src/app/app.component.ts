@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<div>Hello {{value}}</div>`,
+  template: `<div>Hello {{value}}</div>
+  <div><button><a href="/.auth/login/github?post_login_redirect_uri=http://localhost:4200/">Login with github</a></button></div>`,
 })
 export class AppComponent {
   value = 'World';
