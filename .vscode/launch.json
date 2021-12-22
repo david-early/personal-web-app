@@ -1,12 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
+    
+        {
+            "name": "DbUp",
+            "type": "coreclr",
+            "request": "attach"
+        },
         
         {
-            "name": "Attach to .NET Functions",
+            "name": "Web App",
             "type": "coreclr",
             "request": "attach",
-            "processId": "${command:azureFunctions.pickProcess}"
+            "processId": "${command:azureFunctions.pickProcess}",
         }
     ]
 }

@@ -12,7 +12,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/api"
+				"cwd": "${workspaceFolder}/web-app/api"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/api"
+				"cwd": "${workspaceFolder}/web-app/api"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/api"
+				"cwd": "${workspaceFolder}/web-app/api"
 			}
 		},
 		{
@@ -64,18 +64,19 @@
 			"dependsOn": "clean release (functions)",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/api"
+				"cwd": "${workspaceFolder}/web-app/api"
 			}
 		},
 		{
 			"type": "func",
 			"dependsOn": "build (functions)",
 			"options": {
-				"cwd": "${workspaceFolder}/api/bin/Debug/netcoreapp3.1"
+				"cwd": "${workspaceFolder}/web-app/api/bin/Debug/netcoreapp3.1"
 			},
 			"command": "host start",
 			"isBackground": true,
 			"problemMatcher": "$func-dotnet-watch"
 		}
-	]
+	],
+
 }
