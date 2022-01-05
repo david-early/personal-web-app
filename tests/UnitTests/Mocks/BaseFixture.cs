@@ -1,6 +1,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using Recipes;
+using WebApp.Api;
 
 namespace UnitTests.Mocks
 {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kN9QMe/TxXpkeYnfexUqf8M/oZImfNIXXxSaVD6L58Kw4DM6McsKpkL1F5H2z8oWSnWNLz8Yaj+uXlEVb2Zl+g==",
+  "dgSpecHash": "ui8JX9JCMWexd99zaoykC6n5ucJNjYaTQ7nUtBJCsaxb/xlH+kTs4PTLSg/lLNOqjh0rlM+mHE8erCDKAR1xww==",
   "success": true,
   "projectFilePath": "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj",
   "expectedPackageFiles": [

@@ -9484,8 +9484,8 @@
     },
     "api/1.0.0": {
       "type": "project",
-      "path": "../../web-app/api/api.csproj",
-      "msbuildProject": "../../web-app/api/api.csproj"
+      "path": "../../WebApp/Api/api.csproj",
+      "msbuildProject": "../../WebApp/Api/api.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9522,8 +9522,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/david/github/personal-web-app/web-app/api/api.csproj": {
-              "projectPath": "/home/david/github/personal-web-app/web-app/api/api.csproj"
+            "/home/david/github/personal-web-app/WebApp/Api/api.csproj": {
+              "projectPath": "/home/david/github/personal-web-app/WebApp/Api/api.csproj"
             }
           }
         }

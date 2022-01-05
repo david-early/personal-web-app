@@ -1,8 +1,9 @@
 using System;
 using Xunit;
-using Recipes;
 using System.Linq;
 using UnitTests.Mocks;
+using WebApp.Api;
+using WebApp.Api.DatabaseMappings.Entities;
 
 namespace UnitTests
 {

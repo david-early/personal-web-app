@@ -1,9 +1,9 @@
 {
     "staticWebApps.outputSubpath": "web-app/dist/angular-basic",
-    "azureFunctions.deploySubpath": "web-app/api/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.deploySubpath": "WebApp/Api/bin/Release/netcoreapp3.1/publish",
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "publish (functions)",
-    "azureFunctions.projectSubpath": "web-app/api/bin/Debug/netcoreapp3.1"
+    "azureFunctions.projectSubpath": "WebApp/Api/bin/Debug/netcoreapp3.1"
 }

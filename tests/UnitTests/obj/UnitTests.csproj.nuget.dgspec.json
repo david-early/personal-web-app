@@ -4,90 +4,14 @@
     "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj": {}
   },
   "projects": {
-    "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj": {
+    "/home/david/github/personal-web-app/WebApp/Api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj",
-        "projectName": "UnitTests",
-        "projectPath": "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj",
-        "packagesPath": "/home/david/.nuget/packages/",
-        "outputPath": "/home/david/github/personal-web-app/tests/UnitTests/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/david/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "/home/david/github/personal-web-app/web-app/api/api.csproj": {
-                "projectPath": "/home/david/github/personal-web-app/web-app/api/api.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.InMemory": {
-              "target": "Package",
-              "version": "[3.1.22, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.5.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.0, )"
-            },
-            "xunit.runner.visualstudio": {
-              "target": "Package",
-              "version": "[2.4.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.416/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/david/github/personal-web-app/web-app/api/api.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/david/github/personal-web-app/web-app/api/api.csproj",
+        "projectUniqueName": "/home/david/github/personal-web-app/WebApp/Api/api.csproj",
         "projectName": "api",
-        "projectPath": "/home/david/github/personal-web-app/web-app/api/api.csproj",
+        "projectPath": "/home/david/github/personal-web-app/WebApp/Api/api.csproj",
         "packagesPath": "/home/david/.nuget/packages/",
-        "outputPath": "/home/david/github/personal-web-app/web-app/api/obj/",
+        "outputPath": "/home/david/github/personal-web-app/WebApp/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/david/.nuget/NuGet/NuGet.Config"
@@ -127,6 +51,82 @@
             "Microsoft.NET.Sdk.Functions": {
               "target": "Package",
               "version": "[3.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.416/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "/home/david/github/personal-web-app/tests/UnitTests/UnitTests.csproj",
+        "packagesPath": "/home/david/.nuget/packages/",
+        "outputPath": "/home/david/github/personal-web-app/tests/UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/david/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/david/github/personal-web-app/WebApp/Api/api.csproj": {
+                "projectPath": "/home/david/github/personal-web-app/WebApp/Api/api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             }
           },
           "imports": [
