@@ -24,6 +24,8 @@ jobs:
       run: ls
     - name: Change Directory
       run: cd tests/UnitTests
+    - name: list directory
+      run: ls
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
