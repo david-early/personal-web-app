@@ -50,3 +50,7 @@ db/appsettings.json
 
 #node modules for front end
 WebApp/node_modules
+
+# dotnet test build files
+tests/UnitTests/obj/
+tests/UnitTest/bin/
