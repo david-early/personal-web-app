@@ -23,7 +23,7 @@ jobs:
     - name: ls
       run: ls
     - name: Change Directory
-      run: cd /tests/UnitTests
+      run: cd tests/UnitTests
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
