@@ -11,7 +11,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: tests/UnitTests
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
@@ -20,10 +22,6 @@ jobs:
         dotnet-version: 3.1.x
     - name: pwd
       run: pwd
-    - name: ls
-      run: ls
-    - name: Change Directory
-      run: cd tests/UnitTests
     - name: list directory
       run: ls
     - name: Restore dependencies
