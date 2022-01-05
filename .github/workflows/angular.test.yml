@@ -18,11 +18,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
+    - name: PWD
+    - run: pwd
+    - name: Change Directory
+    - run: cd WebApp
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
