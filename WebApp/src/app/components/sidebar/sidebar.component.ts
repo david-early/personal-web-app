@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 import { identityProviders, UserInfo } from '../../models/userInfo';
-import { AuthenticationService } from '../../services/authentication-service.service';
 
 @Component({
   selector: 'app-sidebar',

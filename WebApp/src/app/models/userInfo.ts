@@ -1,4 +1,4 @@
-export interface UserInfo {
+export class UserInfo {
     identityProvider: string;
     userId: string;
     userDetails: string;
