@@ -34,6 +34,10 @@ jobs:
         cache-dependency-path: WebApp/package-lock.json
     - name: Get specific version of npm
       run: npm install -g npm@6.11.0
+    - name: apt update
+      run: apt-get update
+    - name: Install apt package for chrome run
+      run: apt-get install -y libgbm-dev
     # - name: Use Node.js ${{ matrix.node-version }}
     #     uses: actions/setup-node@v2
     #     with:
