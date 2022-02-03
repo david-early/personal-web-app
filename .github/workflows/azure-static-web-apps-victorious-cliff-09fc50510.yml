@@ -30,7 +30,7 @@ jobs:
           secrets: 'SQLConnectionString'
         id: getSecretAction
       
-      - run: export SQLConnectionString = ${{ steps.getSecretAction.outputs.SQLConnectionString }}
+      - run: export SQLConnectionString=${{ steps.getSecretAction.outputs.SQLConnectionString }}
       
       - run: echo $SQLConnectionString
     
