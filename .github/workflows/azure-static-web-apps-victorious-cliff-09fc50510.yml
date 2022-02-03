@@ -18,6 +18,19 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - name: Azure key vault - Get Secrets
+        uses: Azure/get-keyvault-secrets@v1
+        with:
+          # Name of the azure key vault
+          keyvault: "personal-web-app-kv"
+          # Name of the secret to be fetched
+          secrets: 'SQLConnectionString'
+        id: getSecretAction
+      
+      - run: export SQLConnectionString = ${{ steps.getSecretAction.outputs.SQLConnectionString }}
+      
+      - run: echo $SQLConnectionString
+    
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
