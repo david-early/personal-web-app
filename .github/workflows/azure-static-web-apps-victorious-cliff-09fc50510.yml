@@ -30,7 +30,7 @@ jobs:
           secrets: 'SQLConnectionString'
         id: getSecretAction
       
-      - run: export SQLConnectionString=${{ steps.getSecretAction.outputs.SQLConnectionString }}
+      - run: echo "SQLConnectionString=${{ steps.getSecretAction.outputs.SQLConnectionString }}" >> $GITHUB_ENV
       
       - run: echo $SQLConnectionString
     
