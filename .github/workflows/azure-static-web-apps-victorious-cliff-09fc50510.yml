@@ -45,11 +45,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
           cache-dependency-path: WebApp/package-lock.json
-          
+
       - name: Get specific version of npm
         run: npm install -g npm@6.11.0
 
       - run: npm ci
+        working-directory: WebApp
 
       - name: npm build
         working-directory: WebApp
