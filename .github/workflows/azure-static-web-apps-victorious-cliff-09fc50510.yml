@@ -38,23 +38,7 @@ jobs:
         uses: actions/setup-dotnet@v1.9.0
         with:
           dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
-          
-      - name: Set up node
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-          cache-dependency-path: WebApp/package-lock.json
-
-      - name: Get specific version of npm
-        run: npm install -g npm@6.11.0
-
-      - run: npm ci
-        working-directory: WebApp
-
-      - name: npm build
-        working-directory: WebApp
-        run: npm run build 
+        
 
       - name: Build And Deploy
         id: builddeploy
@@ -67,7 +51,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/WebApp" # App source code path
           api_location: "/WebApp/Api" # Api source code path - optional
-          output_location: "/WebApp/dist/angular-basic" # Built app content directory - optional
+          app_artifact_location: "/WebApp/dist/angular-basic" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
