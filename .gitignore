@@ -44,3 +44,15 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#DbUp appsettings file
+db/appsettings.json
+#DbUp obj files
+db/obj
+
+#node modules for front end
+WebApp/node_modules
+
+# dotnet test build files
+tests/UnitTests/obj/
+tests/UnitTest/bin/

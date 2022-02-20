@@ -1,0 +1,15 @@
+<div class="col-auto">
+    <h2>David Early</h2>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+            <a *ngIf="!authService.isLoggedIn()" class="nav-link" href="/.auth/login/github?post_login_redirect_uri={{redirect}}">Login with Github</a>
+            <a *ngIf="authService.isLoggedIn()" class="nav-link" href="/.auth/logout?post_login_redirect_uri={{redirect}}">Logout</a>
+          </li>
+      </ul>
+</div>
