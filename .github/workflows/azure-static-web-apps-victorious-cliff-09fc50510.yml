@@ -33,7 +33,10 @@ jobs:
       - run: echo "SQLConnectionString=${{ steps.getSecretAction.outputs.SQLConnectionString }}" >> $GITHUB_ENV
       
       - run: echo $SQLConnectionString
-    
+      
+      - name: Setup .NET Core SDK
+      - uses: actions/setup-dotnet@v1.9.0
+          
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
