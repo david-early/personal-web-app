@@ -39,9 +39,9 @@ jobs:
         with:
           dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
           
-      - name: ng build --prod 
+      - name: npm build
         working-directory: WebApp
-        run: ng build --prod 
+        run: npm run build 
 
       - name: Build And Deploy
         id: builddeploy
