@@ -39,6 +39,10 @@ jobs:
         with:
           dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
           
+      - name: ng build --prod 
+        working-directory: WebApp
+        run: ng build --prod 
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
