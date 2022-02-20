@@ -47,6 +47,8 @@ Thumbs.db
 
 #DbUp appsettings file
 db/appsettings.json
+#DbUp obj files
+db/obj
 
 #node modules for front end
 WebApp/node_modules
