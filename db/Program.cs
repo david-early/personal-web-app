@@ -18,8 +18,13 @@ namespace db
                 .AddJsonFile($"{cwd}/appsettings.json")
                 .Build();
 
-            var connectionString = configuration.GetConnectionString("SQLConnectionString");
+            string connectionString = Environment.GetEnvironmentVariable("SQLConnectionString");
 
+        #if DEBUG
+            connectionString = configuration.GetConnectionString("SQLConnectionString");
+        #endif
+        
+            Console.WriteLine($"connection string = {connectionString}");
             var upgrader =
                 DeployChanges.To
                     .SqlDatabase(connectionString)
