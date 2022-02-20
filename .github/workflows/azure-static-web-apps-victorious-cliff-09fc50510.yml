@@ -34,9 +34,8 @@ jobs:
       
       - run: echo $SQLConnectionString
       
-      - uses: actions/setup-dotnet@v1.9.0
       - name: Setup .NET Core SDK
-
+        uses: actions/setup-dotnet@v1.9.0
           
       - name: Build And Deploy
         id: builddeploy
